@@ -15,4 +15,8 @@ inclusive) 0
 multiplicidade) 0
 10- O programa utiliza, ao menos, uma coleção de objetos (por exemplo, usando a classe
 ArrayList) 0
+11-O programa contém, ao menos, uma classe derivada da classe Exception 0
+12- O programa possui uma interface gráfica 0
+13- O programa lê dados de um arquivo csv ou txt 0
+14- O programa recupera e salva objetos persistentes
 
