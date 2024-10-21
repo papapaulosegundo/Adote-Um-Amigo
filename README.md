@@ -1,5 +1,8 @@
 # Sistema-de-Adoçao
 Projeto do 3 periodo para a PUCPR feito em java
+
+Este projeto tem como objetivo criar um sistema web completo para facilitar o processo de adoção de animais de estimação. Desenvolvido em Java, o sistema oferece uma plataforma intuitiva para usuários cadastrados buscarem e solicitarem a adoção de gatos e cachorros.
+
 Critérios do Projeto
 1- O programa é estruturado em classes de acordo com o princípio de encapsulamento 0
 2- O programa é composto de, no mínimo, 5 classes 0
