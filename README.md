@@ -9,5 +9,6 @@ Funcionalidades: Cadastro de Usuários: Permite que novos usuários se cadastrem
 
 Tecnologias: (Java, framework, banco de dados, etc.).
 
-Diagrama de Classes:
+Diagrama de Classes: ![image](https://github.com/user-attachments/assets/ad9e427d-4b4f-4339-9827-ed292a77f1b7)
+
 
