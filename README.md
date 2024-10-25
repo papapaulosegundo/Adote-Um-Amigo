@@ -1,4 +1,9 @@
-# Sistema-de-Adoçao
+# Sistema-de-Adoçao JAVA
+
+![image](https://github.com/user-attachments/assets/be670ddf-cb55-4ee6-be5d-b12343394407)
+
+
+
 Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
 
 Este projeto tem como objetivo criar um sistema web completo para facilitar o processo de adoção de animais de estimação. Desenvolvido em Java, o sistema oferece uma plataforma intuitiva para usuários cadastrados buscarem e solicitarem a adoção de gatos e cachorros.
@@ -9,6 +14,6 @@ Funcionalidades: Cadastro de Usuários: Permite que novos usuários se cadastrem
 
 Tecnologias: (Java, framework, banco de dados, etc.).
 
-Diagrama de Classes: ![image](https://github.com/user-attachments/assets/ad9e427d-4b4f-4339-9827-ed292a77f1b7)
+Diagrama de Classes
 
 
