@@ -4,7 +4,9 @@
 
 #
 
-Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
+# Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
+
+#
 
 Este projeto tem como objetivo criar um sistema web completo para facilitar o processo de adoção de animais de estimação. Desenvolvido em Java, o sistema oferece uma plataforma intuitiva para usuários cadastrados buscarem e solicitarem a adoção de gatos e cachorros.
 
