@@ -41,7 +41,10 @@ Este projeto tem como objetivo criar um sistema web completo para facilitar o pr
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="http://marsx.vip"><img src="https://avatars2.githubusercontent.com/u/21303543?v=4?s=100" width="100px;" alt="Wenqing Xue"/><br /><sub><b>Wenqing       Xue</b></sub></a><br /><a href="#translation-MarsXue" title="Translation">🌍</a></td>  
-    </tr>  
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="http://marsx.vip"><img src="https://avatars2.githubusercontent.com/u/21303543?v=4?s=100" width="100px;" alt="Wenqing Xue"/><br /><sub><b>Wenqing       Xue</b></sub></a><br /><a href="#translation-MarsXue" title="Translation">🌍</a></td>  
+    </tr>
   </tbody>
 </table>
 
