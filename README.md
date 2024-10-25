@@ -1,7 +1,5 @@
 <h1 align="center">Sistema de Adoção em JAVA</h1>
 
-#
-
 # Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
 
 ## Sobre o Projeto
