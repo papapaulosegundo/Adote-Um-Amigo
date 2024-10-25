@@ -35,5 +35,7 @@ Este projeto tem como objetivo criar um sistema web completo para facilitar o pr
 * Lombok >= 1.18 (para simplificar o código)
 * Extensão JAVA para VSCODE (se for utilizado VSCODE)
 
+## Contribuidores
+
 
 
