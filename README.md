@@ -6,8 +6,6 @@
 
 # Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
 
-#
-
 Este projeto tem como objetivo criar um sistema web completo para facilitar o processo de adoção de animais de estimação. Desenvolvido em Java, o sistema oferece uma plataforma intuitiva para usuários cadastrados buscarem e solicitarem a adoção de gatos e cachorros.
 
 Visão Geral: Este projeto tem como objetivo criar uma plataforma digital que facilite a adoção de animais de estimação, conectando pessoas que desejam adotar com animais que buscam um lar amoroso. A aplicação permite que usuários cadastrem seus perfis, busquem por animais disponíveis para adoção, enviem solicitações de adoção e acompanhem o status dessas solicitações.
