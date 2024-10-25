@@ -1,4 +1,4 @@
-# Sistema-de-Adoçao JAVA
+<h1 align="center">Sistema de Adoção em JAVA</h1>
 
 ![image](https://github.com/user-attachments/assets/be670ddf-cb55-4ee6-be5d-b12343394407)
 
