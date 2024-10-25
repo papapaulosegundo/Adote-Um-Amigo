@@ -3,6 +3,9 @@
 # Projeto do 3° período para a matéria de orientação a objetos na PUCPR.
 
 ## Sobre o Projeto
+Adote um Amigo é um aplicação em Java com uma elegante, expressiva sintaxe. Nós acreditamos que o desenvolvimento deve ser um experiência agradável e satisfatória. Adote um Amigo está sendo feito com muito carinho e esperamos que nosso projeto possa influênciar positivamente tanto no seu aprendizado, inspiração e ajudar em sua jornada. 
+
+## Objetivo
 Este projeto tem como objetivo criar um sistema web completo para facilitar o processo de adoção de animais de estimação. Desenvolvido em Java, o sistema oferece uma plataforma intuitiva para usuários cadastrados buscarem e solicitarem a adoção de gatos e cachorros. Conectando pessoas que desejam adotar com animais que buscam um lar amoroso. A aplicação permite que usuários cadastrem seus perfis, busquem por animais disponíveis para adoção, enviem solicitações de adoção e acompanhem o status dessas solicitações..
 
 ## Funcionalidades
