@@ -41,7 +41,8 @@ Este projeto tem como objetivo criar um sistema web completo para facilitar o pr
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/papapaulosegundo"><img src="https://avatars.githubusercontent.com/u/148829920?v=4" width="100px;" alt="Paulo César Muchalski"/><br /><sub><b>Paulo César Muchalski</b></sub></a><br /><a href="#translation-MarsXue" title="Translation">🇧🇷</a></td>  
-
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/GiuliaVerse"><img src="https://avatars.githubusercontent.com/u/163077331?v=4" width="100px;" alt="Giulia Casteluci"/><br /><sub><b>Giulia Casteluci</b></sub></a><br /><a title="Translation">🇧🇷</a></td>  
     </tr>
   </tbody>
