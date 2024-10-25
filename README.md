@@ -11,9 +11,20 @@ Este projeto tem como objetivo criar um sistema web completo para facilitar o pr
 
 ## Funcionalidades
 
-- 🔹 Cadastro de Usuários: Permite que novos usuários se cadastrem no sistema, fornecendo informações pessoais e de contato. Cadastro de Animais: Permite que administradores cadastrem os animais disponíveis para adoção, com informações como nome, raça, idade, características e fotos. Busca de Animais: Permite aos usuários realizar buscas por animais, filtrando por raça, idade, tamanho e outras características. Solicitação de Adoção: Permite aos usuários enviar solicitações de adoção para os animais de interesse. Gerenciamento de Solicitações: Permite aos administradores gerenciar as solicitações de adoção, aprovando ou rejeitando as mesmas. Perfil do Usuário: Permite que os usuários visualizem suas informações pessoais, o histórico de solicitações e os animais adotados.
-- 🔹 Tecnologias: (Java, framework, banco de dados, etc.).
+- 🔹 Cadastro de Usuários: Permite que novos usuários se cadastrem no sistema, fornecendo informações pessoais e de contato.
+- 🔹 Cadastro de Animais: Permite que administradores cadastrem os animais disponíveis para adoção, com informações como nome, raça, idade, características e fotos.
+- 🔹 Busca de Animais: Permite aos usuários realizar buscas por animais, filtrando por raça, idade, tamanho e outras características.
+- 🔹 Solicitação de Adoção: Permite aos usuários enviar solicitações de adoção para os animais de interesse.
+- 🔹 Gerenciamento de Solicitações: Permite aos administradores gerenciar as solicitações de adoção, aprovando ou rejeitando as mesmas.
+- 🔹 Perfil do Usuário: Permite que os usuários visualizem suas informações pessoais, o histórico de solicitações e os animais adotados.
 
-Diagrama de Classes
+## Tecnologias
+
+- 🔹 Java
+- 🔹 framework
+- 🔹 Banco de Dados
+- 🔹 Interface Gráfica
+
+## Diagramas
 
 
