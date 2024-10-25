@@ -24,6 +24,16 @@ Este projeto tem como objetivo criar um sistema web completo para facilitar o pr
 - 🔹 Banco de Dados
 - 🔹 Interface Gráfica
 
-## Diagramas
+## **Requisitos**
+* IDE de sua preferência
+* Java Development Kit (JDK) >= 11
+* Apache Maven >= 3.6
+* Spring Boot >= 2.5 || >= 3.0
+* Hibernate ORM >= 5.4
+* PostgreSQL >= 12.0 (ou outro banco de dados compatível)
+* Docker >= 20.10 (opcional, para contêineres)
+* Lombok >= 1.18 (para simplificar o código)
+* Extensão JAVA para VSCODE (se for utilizado VSCODE)
+
 
 
