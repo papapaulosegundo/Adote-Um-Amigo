@@ -8,6 +8,7 @@ public abstract class Animal {
     private String cor;
     private String raca;
 
+    // o construtor pode ser chamado nas subclasses
     public Animal(String nome, int idade, boolean castracao, float peso, String cor, String raca) {
         this.nome = nome;
         this.idade = idade;
@@ -42,6 +43,7 @@ public abstract class Animal {
         return raca;
     }
 
+    // Setters
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -65,4 +67,7 @@ public abstract class Animal {
     public void setRaca(String raca) {
         this.raca = raca;
     }
+
+      // Método abstrato
+      public abstract void emitirSom();
 }
