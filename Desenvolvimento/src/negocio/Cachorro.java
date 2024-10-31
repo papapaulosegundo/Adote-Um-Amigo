@@ -8,6 +8,14 @@ public class Cachorro extends Animal implements Passeavel {
         this.porte = porte;
     }
 
+    public String getPorte() {
+        return porte;
+    }
+
+    public void setPorte(String porte) {
+        this.porte = porte;
+    }
+
     @Override
     public void passear() {
         System.out.println("Pesseando com o cachorro " + getNome());
