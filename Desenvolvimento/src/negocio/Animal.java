@@ -68,6 +68,6 @@ public abstract class Animal {
         this.raca = raca;
     }
 
-      // Método abstrato
-      public abstract void emitirSom();
+    // Método abstrato
+    public abstract void emitirSom();
 }

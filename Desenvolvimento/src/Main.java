@@ -13,10 +13,8 @@ public class Main {
         // tratamento da exceção gerada pelo método adotar();
         try {
             a.adotar();
-        } catch( ExcecaoAnimalNaoDisponivel e) {    // captura a exceção lançada no método adotar()
+        } catch (ExcecaoAnimalNaoDisponivel e) { // captura a exceção lançada no método adotar()
             JOptionPane.showMessageDialog(null, e.getMessage());
-         }
-
-
+        }
     }
 }

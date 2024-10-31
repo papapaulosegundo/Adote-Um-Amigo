@@ -1,4 +1,5 @@
 package negocio;
+
 import util.ExcecaoAnimalNaoDisponivel;
 
 import java.util.List;
@@ -10,12 +11,12 @@ public class Abrigo {
     public void adotar() {
 
         String animal = JOptionPane.showInputDialog("Escolha um animal: ");
-        if( !animal.equalsIgnoreCase("Gato") && !animal.equalsIgnoreCase("Cachorro")) {
+        if (!animal.equalsIgnoreCase("Gato") && !animal.equalsIgnoreCase("Cachorro")) {
             // caso seja um animal não disponível, lança a exceção
             throw new ExcecaoAnimalNaoDisponivel("Animal não disponível: " + animal);
         }
         JOptionPane.showMessageDialog(null, "Parabens, voce adotou um " + animal);
 
     }
-    
+
 }

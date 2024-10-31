@@ -11,27 +11,27 @@ public abstract class Funcionario {
         this.email = email;
     }
 
-    public String getNome(){
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getTelefone(){
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone){
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public int getEmail(){
+    public int getEmail() {
         return email;
     }
 
-    public void setEmail(int email){
+    public void setEmail(int email) {
         this.email = email;
     }
 
