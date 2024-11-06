@@ -1,12 +1,12 @@
 package negocio;
 
 import util.ExcecaoAnimalNaoDisponivel;
-
+import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
 
 public class Abrigo {
-    private List<Animal> animais;
+    private List<Animal> animais = new ArrayList<Animal>();
 
     public void adotar() {
 
@@ -19,4 +19,15 @@ public class Abrigo {
 
     }
 
+    // Chamadas Polimorficas 
+    public void adicionarAnimal(Animal animal) {
+        animais.add(animal);
+    }
+
+    public void sons() {
+        for( Animal animal : animais ) {
+            animal.emitirSom();
+        }
+    }
+    
 }

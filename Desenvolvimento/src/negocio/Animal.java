@@ -4,12 +4,12 @@ public abstract class Animal {
     private String nome;
     private int idade;
     private boolean castracao;
-    private float peso;
+    private double peso;
     private String cor;
     private String raca;
 
     // o construtor pode ser chamado nas subclasses
-    public Animal(String nome, int idade, boolean castracao, float peso, String cor, String raca) {
+    public Animal(String nome, int idade, boolean castracao, double peso, String cor, String raca) {
         this.nome = nome;
         this.idade = idade;
         this.castracao = castracao;
@@ -18,7 +18,7 @@ public abstract class Animal {
         this.raca = raca;
     }
 
-    // Getters
+    // Getters / Encapsulamento
     public String getNome() {
         return nome;
     }
@@ -31,7 +31,7 @@ public abstract class Animal {
         return castracao;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
@@ -43,7 +43,7 @@ public abstract class Animal {
         return raca;
     }
 
-    // Setters
+    // Setters / Encapsulamento
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -56,7 +56,7 @@ public abstract class Animal {
         this.castracao = castracao;
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
@@ -66,6 +66,14 @@ public abstract class Animal {
 
     public void setRaca(String raca) {
         this.raca = raca;
+    }
+
+    public double calcularTaxaAdocao() {
+        double taxa = 100;
+        if( isCastracao() ) {
+            taxa += 20;
+        }
+        return taxa;
     }
 
     // Método abstrato
