@@ -12,6 +12,7 @@ public class Cachorro extends Animal implements Passeavel {
     public String getPorte() {
         return porte;
     }
+
     public void setPorte(String porte) {
         this.porte = porte;
     }
@@ -27,11 +28,11 @@ public class Cachorro extends Animal implements Passeavel {
     public void emitirSom() {
         System.out.println("Au au au");
     }
-    
+
     // Metodo sobrescrito
     public double calcularTaxaAdocao() {
         double taxa = super.calcularTaxaAdocao();
-        if( porte.equals("grande")) {
+        if (porte.equals("grande")) {
             taxa += taxa * 0.1;
         }
         return taxa;
