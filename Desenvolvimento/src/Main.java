@@ -11,6 +11,10 @@ public class Main {
     public static void main(String[] args) {
         Abrigo a = new Abrigo();
 
+        if( !a.login() ) {
+            System.exit(0);
+        }
+
         // Chamada polimorfica de abrigo
         a.adicionarAnimal(new Gato("Tom", 3, false , 4.0, "cinza", "indefinida", false ));
         a.adicionarAnimal(new Cachorro("Spike", 5, true , 5, "cinza", "bulldog", "medio"));
