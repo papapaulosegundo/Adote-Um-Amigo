@@ -2,6 +2,7 @@ package negocio;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class CadastroUsuario {
     private List<Usuario> usuarios;
@@ -10,14 +11,34 @@ public class CadastroUsuario {
         this.usuarios = new ArrayList<>();
     }
 
-    public void adicionarUsuario(Usuario usuario) {
-        // Verificar se já existe um usuário com o mesmo login
-        if (buscarUsuarioPorLogin(usuario.getLogin()) != null) {
+    // Método para permitir que o usuário cadastre seu nome, login e senha
+    public void adicionarUsuario() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Cadastro de novo usuário:");
+
+        System.out.print("Digite seu nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Digite seu login: ");
+        String login = scanner.nextLine();
+
+        if (buscarUsuarioPorLogin(login) != null) {
             System.out.println("Erro: Já existe um usuário com esse login.");
-        } else {
-            usuarios.add(usuario);
-            System.out.println("Usuário " + usuario.getLogin() + " cadastrado com sucesso.");
+            return;
         }
+
+        // Solicitar a senha do usuário
+        System.out.print("Digite sua senha: ");
+        String senha = scanner.nextLine();
+
+        // Criar o objeto Usuario com os dados fornecidos
+        Usuario usuario = new Usuario(nome, login, senha);
+
+        // Adicionar o usuário à lista
+        usuarios.add(usuario);
+
+        System.out.println("Usuário " + nome + " cadastrado com sucesso.");
     }
 
     // Método para buscar um usuário pelo login
