@@ -21,7 +21,7 @@ public class Main {
 
         a.sons();
 
-        Cliente c = new Cliente();
+        // Cliente c = new Cliente();
 
         // tratamento da exceção gerada pelo método adotar();
         try {
