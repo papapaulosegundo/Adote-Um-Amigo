@@ -12,7 +12,8 @@ public class Abrigo {
 
     public Abrigo() {
         // usuario fixo para teste
-        usuarios.add(new Usuario("Paulo", "paulo", "123"));
+        usuarios.add(new Usuario("Paulo", "paulo", "123", TipoUsuario.ABRIGO));
+        usuarios.add(new Usuario("Cliente", "cliente", "123", TipoUsuario.CLIENTE));
     }
 
     public boolean buscaUsuario(String login, String senha) {
@@ -32,7 +33,11 @@ public class Abrigo {
             JOptionPane.showMessageDialog(null, "Usuario não cadastrado", "Erro", JOptionPane.ERROR_MESSAGE);
             return false;
         } else {
-            JOptionPane.showMessageDialog(null, "Usuario logado com sucesso!");
+            if( usuarioAtivo.isCliente() )
+                JOptionPane.showMessageDialog(null, "Cliente logado com sucesso!");
+            else
+                JOptionPane.showMessageDialog(null, "Abrigo logado com sucesso!");
+
             return true;
         }
     }
@@ -57,6 +62,37 @@ public class Abrigo {
         for( Animal animal : animais ) {
             animal.emitirSom();
         }
+    }
+
+    public void cadastrarUsuario() {
+        String nome, login, senha;
+
+        nome = JOptionPane.showInputDialog("Informe seu nome");
+        login = JOptionPane.showInputDialog("Informe seu login");
+        senha = JOptionPane.showInputDialog("Informe uma senha");
+
+        usuarios.add(new Usuario(nome, login, senha, TipoUsuario.CLIENTE));
+
+        JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
+    }
+
+    public Usuario getUsuarioAtivo() {
+        return usuarioAtivo;
+    }
+
+    // operacoes para usuario do abrigo
+    public void operacoesAbrigo() {
+        JOptionPane.showMessageDialog(null, "Operacoes do abrigo");    }
+
+    // operacoes para usuario cliente
+    public void operacoesCliente() {
+        // tratamento da exceção gerada pelo método adotar();
+        try {
+            adotar();
+        } catch (ExcecaoAnimalNaoDisponivel e) { // captura a exceção lançada no método adotar()
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+
     }
     
 }
