@@ -1,6 +1,7 @@
 package negocio;
+import java.io.*;
 
-public class Usuario {
+public class Usuario implements Serializable {
 
     private String nome;
     private String login;
