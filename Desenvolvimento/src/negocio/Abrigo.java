@@ -1,9 +1,12 @@
 package negocio;
 
 import util.ExcecaoAnimalNaoDisponivel;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
+import java.io.*;
 
 public class Abrigo {
     private List<Usuario> usuarios = new ArrayList<Usuario>();
@@ -11,6 +14,9 @@ public class Abrigo {
     private Usuario usuarioAtivo;
 
     public Abrigo() {
+        // buscar os usuarios salvos
+        carregarUsuarios();
+
         // usuario fixo para teste
         usuarios.add(new Usuario("Paulo", "paulo", "123", TipoUsuario.ABRIGO));
         usuarios.add(new Usuario("Cliente", "cliente", "123", TipoUsuario.CLIENTE));
@@ -74,8 +80,43 @@ public class Abrigo {
         usuarios.add(new Usuario(nome, login, senha, TipoUsuario.CLIENTE));
 
         JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
+        salvarUsuarios();
     }
 
+    private void salvarUsuarios() {
+
+        try {
+            FileOutputStream fos = new FileOutputStream("usuarios.txt");
+            ObjectOutputStream os = new ObjectOutputStream(fos);
+
+            for( Usuario user : usuarios ) {
+                os.writeObject(user);
+            }            
+            
+            os.close();
+            fos.close();
+        } catch (IOException e ){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    private void carregarUsuarios() {
+
+        try {
+            FileInputStream fis = new FileInputStream("usuarios.txt");
+            ObjectInputStream is = new ObjectInputStream(fis);
+            Usuario user;
+
+            while( (user = (Usuario) is.readObject()) != null ) {
+                usuarios.add(user);
+            }            
+            
+            is.close();
+            fis.close();
+        } catch (IOException | ClassNotFoundException e ){
+            System.out.println(e.getMessage());
+        }
+    }
     public Usuario getUsuarioAtivo() {
         return usuarioAtivo;
     }
