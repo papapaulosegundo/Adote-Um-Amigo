@@ -21,6 +21,7 @@ public class Abrigo {
         usuarios.add(new Usuario("Paulo", "paulo", "123", TipoUsuario.ABRIGO));
         usuarios.add(new Usuario("Cliente", "cliente", "123", TipoUsuario.CLIENTE));
 
+        // Metodo adicionarAnimal polimorfico 
         // animais fixos para teste
         adicionarAnimal(new Gato("Ichigo", 3, true, 4.0, "Laranja", "SRD", true)); //flashinho
         adicionarAnimal(new Gato("Yummi", 1, false, 4.0, "Laranja", "SRD", false)); // lyon
@@ -33,6 +34,7 @@ public class Abrigo {
 
     }
 
+    // Usuario e senha cadastrado
     public boolean buscaUsuario(String login, String senha) {
         for( Usuario user : usuarios ) {
             if( user.getLogin().equals(login) && 
@@ -43,6 +45,8 @@ public class Abrigo {
         }   
         return false;
     }
+
+    /// login
     public boolean login() {
         String login = JOptionPane.showInputDialog("Informe seu login");
         String senha = JOptionPane.showInputDialog("Informe sua senha: ");
@@ -59,6 +63,7 @@ public class Abrigo {
         }
     }
 
+    // Busca animal pelo nome
     public Animal buscaAnimal(String nome) {
         for( Animal animal : animais ) {
             if( animal.getNome().equalsIgnoreCase(nome)) {
@@ -91,12 +96,7 @@ public class Abrigo {
         animais.add(animal);
     }
 
-    public void sons() {
-        for( Animal animal : animais ) {
-            animal.emitirSom();
-        }
-    }
-
+    // Cadastro
     public void cadastrarUsuario() {
         String nome, login, senha;
 
@@ -110,6 +110,7 @@ public class Abrigo {
         salvarUsuarios();
     }
 
+    // Serializable no txt
     private void salvarUsuarios() {
 
         try {
@@ -127,6 +128,7 @@ public class Abrigo {
         }
     }
 
+    // Carrega do txt  
     private void carregarUsuarios() {
 
         try {
@@ -144,16 +146,30 @@ public class Abrigo {
             System.out.println(e.getMessage());
         }
     }
+
+    // Qual usuario logado
     public Usuario getUsuarioAtivo() {
         return usuarioAtivo;
     }
 
-    // operacoes para usuario do abrigo
+    // operacoes para Abrigo / Interface passear
     public void operacoesAbrigo() {
-        JOptionPane.showMessageDialog(null, "Operacoes do abrigo");
-            
+        String animaisP = "";
+        for( Animal animal : animais ) {
+            if( animal instanceof Passeavel ) {
+                animaisP += animal.getNome() + "\n";
+            }
+        }
+        String animalP = JOptionPane.showInputDialog(animaisP + "\nEscolha um animal para passear");
+
+        for( Animal animal : animais ) {
+            if( animal.getNome().equalsIgnoreCase(animalP) ) {
+                JOptionPane.showMessageDialog(null, ((Passeavel) animal).passear());
+            }
+        }
     }
 
+    // Permite usuario a adotar
     public void operacoesCliente() {
         // tratamento da exceção gerada pelo método adotar();
         mostrarAnimais();
@@ -165,33 +181,23 @@ public class Abrigo {
 
     }
 
- // Método para mostrar as fotos dos animais
+ // Mostrar os animais
  public void mostrarAnimais() {
-    // Criando a janela
-    JFrame janela = new JFrame("Fotos dos Animais");
+    JFrame janela = new JFrame("Animais Disponíveis");
     janela.setLayout(new FlowLayout());
 
-    // Carregando as imagens
-    //ImageIcon imagemGato = new ImageIcon(getClass().getResource("c:/images/bela-cachorro.jpg"));
-    //ImageIcon imagemCachorro = new ImageIcon(getClass().getResource("cachorro1.jpg"));
-    // Criando os JLabel para exibir as imagens
+    // Criando os JLabel para exibir os nomes dos animais
     for( Animal animal : animais ) {
         JLabel label;
         if( animal instanceof Gato ) {
-            label = new JLabel("Gato: " + animal.getNome()); //, imagemCachorro, JLabel.CENTER);
+            label = new JLabel("Gato: " + animal.getNome());
         } else {
-            label = new JLabel("Cachorro: " + animal.getNome()); //, imagemCachorro, JLabel.CENTER);
+            label = new JLabel("Cachorro: " + animal.getNome());
         }
         label.setPreferredSize(new Dimension(300, 20));
         label.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         janela.add(label);
     }
-    //JLabel labelGato = new JLabel("Gato: " + gato.getNome(), imagemGato, JLabel.CENTER);
-   // JLabel labelCachorro = new JLabel("Cachorro: " + cachorro.getNome(), imagemCachorro, JLabel.CENTER);
-
-    // Adicionando os JLabel na janela
-    //janela.add(labelGato);
-    //janela.add(labelCachorro);
 
     // Configurações da janela
     janela.setSize(400, 300);

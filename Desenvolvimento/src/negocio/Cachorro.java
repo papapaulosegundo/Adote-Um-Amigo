@@ -18,8 +18,8 @@ public class Cachorro extends Animal implements Passeavel {
 
     // Metodo da interface sobrescrito
     @Override
-    public void passear() {
-        System.out.println("Passeando com o cachorro " + getNome());
+    public String passear() {
+        return "Passeando com o cachorro " + getNome();
     }
 
     // Metodo abstrato sobrescrito

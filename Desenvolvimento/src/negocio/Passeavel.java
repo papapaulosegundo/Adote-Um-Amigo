@@ -1,5 +1,5 @@
 package negocio;
 
 public interface Passeavel {
-    void passear();
+    public String passear();
 }
