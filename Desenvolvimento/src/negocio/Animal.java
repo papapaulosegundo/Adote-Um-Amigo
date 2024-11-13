@@ -7,6 +7,7 @@ public abstract class Animal {
     private double peso;
     private String cor;
     private String raca;
+    private boolean adotado;
 
     // o construtor pode ser chamado nas subclasses
     public Animal(String nome, int idade, boolean castracao, double peso, String cor, String raca) {
@@ -16,6 +17,7 @@ public abstract class Animal {
         this.peso = peso;
         this.cor = cor;
         this.raca = raca;
+        this.adotado = false;
     }
 
     // Getters / Encapsulamento
@@ -68,6 +70,7 @@ public abstract class Animal {
         this.raca = raca;
     }
 
+    //Metodo sobrescrito por GATO/CACHORRO
     public double calcularTaxaAdocao() {
         double taxa = 100;
         if( isCastracao() ) {
@@ -76,6 +79,14 @@ public abstract class Animal {
         return taxa;
     }
 
-    // Método abstrato
-    public abstract void emitirSom();
+    public boolean isAdotado() {
+        return adotado;
+    }
+
+    public void adotar() {
+        adotado = true;
+    }
+
+    // Método abstrato GATO/CACHORRO
+    public abstract String emitirSom();
 }
