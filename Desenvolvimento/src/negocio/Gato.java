@@ -11,8 +11,8 @@ public class Gato extends Animal {
 
     // Metodo abstrato sobrescrito
     @Override
-    public void emitirSom() {
-        System.out.println("Miau miau");
+    public String emitirSom() {
+        return "Miau miau";
     }
     
      // Metodo sobrescrito
